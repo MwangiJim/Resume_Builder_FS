@@ -16,7 +16,10 @@ export const CanvasCvSlice=createSlice({
         DataStore:{
 
         },
-        coverLetterTemplate:false
+        coverLetterTemplate:false,
+        UserDetails:{
+
+        }
     },
     reducers:{
         setCanvasState:(state,action)=>{
@@ -54,11 +57,17 @@ export const CanvasCvSlice=createSlice({
                 ...state,
                 coverLetterTemplate:action.payload
             }
+        },
+        setUserDetails:(state,action)=>{
+            return{
+                ...state,
+                UserDetails:action.payload
+            }
         }
     }
 })
 
 export const {setCanvasState,setSkillsSelected,
     setBasicDetails,setPreviewValues,
-    setDataStore,setCoverletterState} = CanvasCvSlice.actions;
+    setDataStore,setCoverletterState,setUserDetails} = CanvasCvSlice.actions;
 export default CanvasCvSlice.reducer;

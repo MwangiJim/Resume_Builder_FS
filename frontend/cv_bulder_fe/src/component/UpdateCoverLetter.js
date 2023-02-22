@@ -24,7 +24,8 @@ const UpdateCoverLetter = ({data}) => {
         })
       }
 
-      function UpdateDetails(){
+      function UpdateDetails(e){
+        e.preventDefault();
         data.map(async(item,i)=>{
           return(
             <>

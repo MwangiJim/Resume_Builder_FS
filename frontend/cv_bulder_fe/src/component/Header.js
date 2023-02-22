@@ -3,9 +3,11 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee,faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
+import {getAuth} from 'firebase/auth'
 
 const Header = () => {
   const navigate = useNavigate();
+  const auth = getAuth()
   return (
     <Container>
        <h3>CVCanvas</h3>
@@ -21,7 +23,7 @@ const Header = () => {
          </li>
          <li>Blog
          </li>
-         <button>Login</button>
+         <button onClick={()=>auth.signOut()}>Logout</button>
       </div>
     </Container>
   )
