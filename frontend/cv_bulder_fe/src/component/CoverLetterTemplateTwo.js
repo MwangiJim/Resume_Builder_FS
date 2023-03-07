@@ -90,10 +90,12 @@ overflow:hidden;
     padding:5px;
  }
  .selectBtn{
-    padding:12px 40px;
-    border-radius:6px;
-    background-color:purple;
-    color:#000;
+  padding:12px 30px;
+  border-radius:25px;
+  font-size:18px;
+  text-transform:uppercase;
+  color:#fff;
+  background-color:#f44336;
     border:none;
     outline:none;
     cursor:pointer;

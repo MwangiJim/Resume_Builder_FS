@@ -55,14 +55,16 @@ let Container = styled.div`
  padding:5px;
  box-shadow:3px 3px 7px #333;
  .selectBtn{
-  padding:12px 40px;
-  border-radius:6px;
-  color:#000;
-  background-color:purple;
+  padding:12px 30px;
+  border-radius:25px;
+  font-size:18px;
+  text-transform:uppercase;
+  color:#fff;
+  background-color:#f44336;
   border:none;
   outline:none;
   cursor:pointer;
-  left:80px;
+  left:50px;
   opacity:0;
   position:relative;
   bottom:0;
@@ -71,7 +73,7 @@ let Container = styled.div`
   bottom:150px;
   position:relative;
   opacity:1;
-  left:80px;
+  left:50px;
   transition:0.5s;
 }
  .cover-header{

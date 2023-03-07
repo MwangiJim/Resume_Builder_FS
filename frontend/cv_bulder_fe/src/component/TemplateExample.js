@@ -169,15 +169,19 @@ let FirstTemplate = styled.div`
     }
   }
   button{
-    background-color:purple;
+    background-color:#f44336;
     padding:12px 30px;
     color:#fff;
-    border-radius:6px;
+    font-size:18px;
+    text-transform:uppercase;
+    border-radius:20px;
     cursor:pointer;
     opacity:0;
+    border:none;
     bottom:0;
     position:relative;
     transition:1s;
     left:80px;
+    outline:none;
   }
 `

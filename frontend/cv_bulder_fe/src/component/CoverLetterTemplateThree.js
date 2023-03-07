@@ -53,14 +53,16 @@ overflow:hidden;
 display:flex;
 justify-content:space-between;
 .selectBtn{
-    padding:12px 40px;
-    border-radius:6px;
-    background-color:purple;
-    color:#000;
+    padding:12px 30px;
+  border-radius:25px;
+  font-size:18px;
+  text-transform:uppercase;
+  color:#fff;
+  background-color:#f44336;
     border:none;
     outline:none;
     cursor:pointer;
-    left:20px;
+    left:-30px;
     opacity:0;
     position:relative;
     bottom:0;
@@ -69,7 +71,7 @@ justify-content:space-between;
     bottom:150px;
     position:relative;
     opacity:1;
-    left:20px;
+    left:-30px;
     transition:0.5s;
   }
 .Header{

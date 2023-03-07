@@ -280,16 +280,6 @@ useEffect(()=>{
             <img src='/images/flag.png'/>
             <small>English</small>
           </div>
-          <div className='profile_completeness'>
-             <small><p>0%</p>Profile Complete</small>
-             <div className='complete'>
-              {[...Array(17)].map((item,i)=>{
-                return(
-                  <span key={i}></span>
-                )
-              })}
-             </div>
-          </div>
           <div className='form_section'>
             <h3>Personal Details</h3>
             <form>

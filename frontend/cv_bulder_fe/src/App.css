@@ -79,7 +79,7 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background-color: rgba(15, 124, 196, 0.856);
+  background-color: rgba(15, 160, 196, 0.856);
   color: #f4f4f4;
 }
 .disable{
@@ -489,6 +489,7 @@ text-align:left;
   border-radius: 4px;
   margin: 3% 0;
   animation: load 4s linear infinite alternate;
+
 }
 .area-line-small{
   width:90%;

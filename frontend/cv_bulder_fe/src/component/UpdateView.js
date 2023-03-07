@@ -120,7 +120,7 @@ const UpdateView = ({data}) => {
                 <small>English</small>
             </div>
             <div className='profile_completeness'>
-                <small><p>0%</p>Profile Complete</small>
+                <small><p>62%</p>Profile Complete</small>
                 <div className='complete'>
                 {[...Array(17)].map((item,i)=>{
                     return(

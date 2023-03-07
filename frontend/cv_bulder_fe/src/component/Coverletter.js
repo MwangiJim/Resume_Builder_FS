@@ -6,6 +6,8 @@ import CoverLetterTemplateThree from './CoverLetterTemplateThree'
 import CoverLetterTemplateTwo from './CoverLetterTemplateTwo'
 import TemplateNavigation from './TemplateNavigation'
 import {useNavigate} from 'react-router-dom'
+import {faTriangleExclamation } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Coverletter = () => {
   const navigate = useNavigate();
@@ -16,7 +18,7 @@ const Coverletter = () => {
        navigate('/coverletterform')
     }
     else{
-      alert('Please select a template to proceed...')
+    
     }
   }
   let[LetterDetails,setLetterDetails]=React.useState([]);
@@ -58,6 +60,10 @@ const Coverletter = () => {
             <br/>
             <button onClick={()=>navigate('/coverletterform')}>Continue Progress</button>
             </div>:<button onClick={MoveToForm}>Create Cover Letter</button>}
+            {!coverLetterTemplate?<div className="error">
+        <FontAwesomeIcon icon={faTriangleExclamation}/>
+        <h3>Please Select a Template before Proceeding.</h3>
+      </div>:''}
         </div>
         <TemplateNavigation/>
         <Row>
@@ -103,12 +109,29 @@ let Container = styled.div`
         border:none;
         cursor:pointer;
         outline:none;
-        border-radius:7px;
-        color:#000;
-        background-color:#fff;
+        border-radius:25px;
+        color:#fff;
+        background-color:#f44336;
         padding:12px 40px;
+        text-transform:uppercase;
         box-shadow:3px 3px 8px #000;
     }
+}
+.error{
+  border: 2px solid #f44336;
+  width:100%;
+  padding:5px;
+  height:25px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:6px;
+  color:#f44336;
+  margin:12px 0 35px;
+  h3{
+    font-size:14px;
+    font-weight:300;
+  }
 }
 `
 let Row = styled.div`

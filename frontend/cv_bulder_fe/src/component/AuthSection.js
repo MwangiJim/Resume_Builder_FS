@@ -42,6 +42,11 @@ const AuthSection = () => {
             }))
         })
     }
+    const element = React.createElement(
+        'h1',
+        {className:'Title'},
+        'Hello'
+    )
   return (
     <Container>
        <div className='form-box'>

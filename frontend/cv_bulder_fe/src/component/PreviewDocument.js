@@ -1,6 +1,6 @@
 import { faTrashCan ,faDownload} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React,{useEffect, useRef} from 'react'
 import styled from 'styled-components'
 
 const PreviewDocument = ({username,l_name,email,city,postalcode,phonenumber,country,websitelink,objective,company,
@@ -12,6 +12,8 @@ projectTitle,projectDesc,githublink,hobbies,id,
       method:'DELETE',
     })
   }
+  let CountCompleteRef = React.useRef(null);
+ // console.log(CountCompleteRef)
   return (
     <Preview>
        <h3 className='Name' style={{fontSize:'16px',textAlign:'center'}}>{username} {l_name}</h3>
